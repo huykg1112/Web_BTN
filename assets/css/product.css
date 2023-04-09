@@ -1,0 +1,382 @@
+body {
+    background-color: #fff;
+    color: #6c757d;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    width: 97%;
+    margin: 0;
+}
+nav{
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.navheader {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0%;
+}
+.navheader ul{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+}
+nav .sticky{
+    width: 100%;
+    background-color: #ffffff;
+    left: 0;
+}
+nav .sticky ul li a{
+    color: #000;
+}
+nav .sticky a{
+    color: #000000;
+}
+.d-sticky{
+    position: sticky;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    /* position: fixed; */
+}
+
+.navbar-brand {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-family: Playfair Display, serif;
+    font-style: italic;
+    transition: color .1s;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.nav-link {
+    font-family: Lato, sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .1s;
+    padding: 8px 16px;
+    text-align: left;
+    display: block;
+}
+
+a:hover {
+    color: #f5a637;
+}
+.navbar a{
+    color: #fff;
+}
+.navbar {
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.header {
+    background-position: 50% 50%;
+    background-image: url(../img/product/header-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -50px;
+    height: 80%;
+    width: 100%;
+}
+
+.header-h1-product {
+    padding-top: 20%;
+    margin-left: 43%;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: Playfair Display, serif;
+    font-size: 50px;
+    line-height: 1.4;
+    margin-bottom: 0.8em;
+    margin-top: 0;
+}
+
+section .about {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+section .content {
+    width: 40%;
+    text-align: center;
+
+}
+
+.about h2 {
+    color: #000;
+    font-family: Playfair Display, serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 3em;
+}
+
+.about p {
+    font-size: 1.5em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center !important;
+    margin-bottom: 2.5rem !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.menunav a {
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.nav-area-link:hover {
+    color: #f5a637;
+}
+
+.nav-area-link {
+    color: #fff;
+    font-family: Lato, sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .1s;
+    padding: 8px 16px;
+    text-align: left;
+    display: block;
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #f5a637;
+    transition: all 0.2s ease;
+}
+
+.product-list img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover !important;
+}
+
+.areaTab {
+    position: static;
+    display: none;
+    flex-wrap: wrap;
+    margin-left: 11%;
+    max-width: 1200px;
+}
+
+.product {
+    width: 540px;
+    padding: 20px 20px;
+    column-count: 3;
+    display: flex;
+    height: 120px;
+}
+
+.product-img {
+    padding: 0 16px;
+    height: 110px;
+}
+
+.product-content {
+    padding: 0 16px;
+    width: 340px;
+    /* text-align: justify; */
+}
+
+.product-content h5 {
+    color: #000;
+    font-size: 1.1885em;
+    font-family: Playfair Display, serif;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 0.8em;
+    margin-top: 0;
+}
+
+.product-price {
+    padding: 0 16px;
+}
+
+.active {
+    display: flex;
+}
+.fade{
+    animation: fade .3s linear;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+body,
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+input {
+  line-height: normal;
+}
+button {
+  cursor: pointer;
+}
+body {
+  padding: 20px;
+}
+.dishes{
+  margin: 50px;
+}
+.image-slider {
+  padding-bottom: 50px;
+}
+.image {
+  height: 250px;
+  margin-bottom: 20px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.image-title {
+  font-size: 20px;
+  color: #8e8fb5;
+}
+.slick-slide{
+    height: 50%;
+}
+.slick-track{
+    position: sticky;
+}
+.slick-initialized .slick-slide {
+  margin: 0 10px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 1;
+  z-index: 5;
+  transition: all 0.2s linear;
+}
+.slick-arrow:hover {
+  background-color: #f5a637;
+  color: white;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 100rem;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+}
+.slick-dots .slick-active button {
+  background-color: #f5a637;
+}
+
+.footer{
+    background-color: #000;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 20rem;
+    
+}
+.text-xs{
+    font-family: Lato,sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+.text-primary{
+    color: #f5a637!important;
+}
+.footerrow{
+    width: 80%;
+}
+.footercol{
+    width: 33.33333%;
+}
+.d-flex{
+    display: flex!important;
+}
+.text{
+    font-family: Lato,sans-serif;
+    font-size: 1rem;
+}
+footer .mb-6{
+    margin-top: 10px;
+    font-size: 14px;
+}
+ion-icon{
+    font-size: 24px;
+    margin-right: 20px;
+}
